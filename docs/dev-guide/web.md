@@ -23,6 +23,7 @@ Then go ahead:
 git clone https://github.com/jitsi/jitsi-meet
 cd ./jitsi-meet
 
+npm i
 # To build the Jitsi Meet application, just type
 make
 ```
@@ -32,12 +33,14 @@ make
 Use the following command in your terminal:
 
 ```bash
+npm i
 make dev
 ```
 
 By default the backend deployment used is `alpha.jitsi.net`. You can point the Jitsi Meet app at a different backend by using a proxy server. To do this, set the WEBPACK_DEV_SERVER_PROXY_TARGET variable:
 
 ```bash
+npm i
 export WEBPACK_DEV_SERVER_PROXY_TARGET=https://your-example-server.com
 make dev
 ```
@@ -53,6 +56,7 @@ warning and continue to your site.
 
 To make a deb you can easily deploy to a public test server, ensure you have the lib-jitsi-meet sources you wish, then:
 ```
+npm i
 make
 dpkg-buildpackage -A -rfakeroot -us -uc -tc
 ```
